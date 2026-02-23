@@ -16,11 +16,16 @@ To get this running locally, you'll need Python 3 installed.
    python -m venv venv
 
 # On Windows: 
+'''bash
 venv\Scripts\activate
+
 # On Mac/Linux: 
+'''bash
 source venv/bin/activate
 
 pip install -r requirements.txt
+
+
 
 # Place a MARKET Buy Order:
 python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
