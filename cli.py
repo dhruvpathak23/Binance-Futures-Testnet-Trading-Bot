@@ -18,13 +18,15 @@ def main():
     
     args = parser.parse_args()
     
-    api_key = os.getenv("BINANCE_TESTNET_API_KEY")
-    api_secret = os.getenv("BINANCE_TESTNET_API_SECRET")
+    api_key = "Rd2v6mVfevubG8l8oKY5odpyAkuKYQPWLKp0lHn0PfPBGXt0nifcLowJJb3L3K78"
+    api_secret = "opyNeQobaww1x6fZaOleU7JMCTLA1W2QVQAycDrL9azzLmmxuNDpbrMvEPpvFYit"
     
     if not api_key or not api_secret:
-        print("Error: BINANCE_TESTNET_API_KEY and BINANCE_TESTNET_API_SECRET environment variables must be set.")
-        logger.error("API credentials missing in environment variables.")
+        print("Error: API keys missing.")
         sys.exit(1)
+
+    api_key = api_key.replace('\n', '').replace('\r', '').replace(' ', '').strip()
+    api_secret =  api_secret.replace('\n', '').replace('\r', '').replace(' ', '').strip()
 
     print(f"\n--- Order Request Summary ---")
     print(f"Symbol: {args.symbol.upper()}")

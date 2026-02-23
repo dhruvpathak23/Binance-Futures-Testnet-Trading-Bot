@@ -1,0 +1,27 @@
+2026-02-23 17:01:44,644 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:01:44,645 - INFO - Sending POST request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1771846304644}
+2026-02-23 17:01:45,447 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:06:18,374 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:06:18,374 - INFO - Sending POST request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1771846578374}
+2026-02-23 17:06:19,222 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:09:23,077 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:09:23,077 - INFO - Sending POST request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1771846763077}
+2026-02-23 17:09:23,648 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:13:53,665 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:13:53,665 - INFO - Sending POST request to /fapi/v1/order with params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1771847033665}
+2026-02-23 17:13:54,208 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:19:00,769 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:19:00,769 - INFO - Sending POST request to /fapi/v1/order with data: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1771847340769, 'signature': '4ae5d2781c8b9ab0e7fddd55a019d32944f3c29803f45796f77593efe4a5367c'}
+2026-02-23 17:19:01,359 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:22:42,580 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:22:42,580 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&recvWindow=60000&timestamp=1771847562580&signature=b818c2856f744de3758a2ef2024e9d0ba4b84757e3071fd6754e2716923efa9f
+2026-02-23 17:22:43,117 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-02-23 17:30:33,235 - INFO - Attempting to place MARKET BUY order for 0.001 BTCUSDT
+2026-02-23 17:30:33,237 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&recvWindow=60000&timestamp=1771848033235&signature=9ea6011d028c6d6511a7844c1fccb78b29b70514438e0eaee7eb8ce60cd2a574
+2026-02-23 17:30:33,796 - ERROR - HTTP Error: Order's notional must be no smaller than 100 (unless you choose reduce only).
+2026-02-23 17:31:39,927 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-02-23 17:31:39,928 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1771848099928&signature=358a247a13aa75d985699209d28fbd98ec37be107a72cc7ff9554ec221e35e35
+2026-02-23 17:31:40,688 - INFO - API Response: {'orderId': 12491303574, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'odYToLbR8E4x9TFLGKJw06', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771848100467}
+2026-02-23 17:32:55,539 - INFO - Attempting to place LIMIT SELL order for 0.01 BTCUSDT
+2026-02-23 17:32:55,539 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=SELL&type=LIMIT&quantity=0.01&price=100000.0&timeInForce=GTC&recvWindow=60000&timestamp=1771848175539&signature=9812b707114e8732a3ef8171dd16326b44cb99d7e50e9530feccc486c01939c1
+2026-02-23 17:32:56,263 - INFO - API Response: {'orderId': 12491330223, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ZKVsAxxhKjiW63roTE3PwA', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771848176041}
