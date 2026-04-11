@@ -25,3 +25,147 @@
 2026-02-23 17:32:55,539 - INFO - Attempting to place LIMIT SELL order for 0.01 BTCUSDT
 2026-02-23 17:32:55,539 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=SELL&type=LIMIT&quantity=0.01&price=100000.0&timeInForce=GTC&recvWindow=60000&timestamp=1771848175539&signature=9812b707114e8732a3ef8171dd16326b44cb99d7e50e9530feccc486c01939c1
 2026-02-23 17:32:56,263 - INFO - API Response: {'orderId': 12491330223, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ZKVsAxxhKjiW63roTE3PwA', 'price': '100000.00', 'avgPrice': '0.00', 'origQty': '0.010', 'executedQty': '0.000', 'cumQty': '0.000', 'cumQuote': '0.00000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1771848176041}
+2026-04-11 14:27:22,818 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 14:27:22,820 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 14:28:37,813 - INFO - FinBERT Model loaded and ready.
+2026-04-11 14:28:37,813 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 14:28:37,814 - INFO - --- Initiating Market Scan ---
+2026-04-11 14:28:37,963 - INFO - Analyzed: 'Major crypto exchange hacked, millions stolen in security breach.' | Sentiment: NEGATIVE | Confidence: 0.8826
+2026-04-11 14:28:37,963 - INFO - STRONG BEARISH SIGNAL. Executing SHORT on BTCUSDT.
+2026-04-11 14:28:37,963 - INFO - Attempting to place MARKET SELL order for 0.01 BTCUSDT
+2026-04-11 14:28:37,963 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775897917963&signature=a15ac8327b94f18b3d995bbbf89c82a7d37fdd39de02eae0e0b89f06b65d5dd7
+2026-04-11 14:28:38,658 - ERROR - HTTP Error: API-key format invalid.
+2026-04-11 14:28:38,658 - ERROR - Strategy execution failed: API Error: API-key format invalid.
+2026-04-11 14:28:38,659 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 14:32:56,811 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 14:53:45,984 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 14:53:45,985 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 14:53:48,292 - INFO - FinBERT Model loaded and ready.
+2026-04-11 14:53:48,292 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 14:53:48,292 - INFO - --- Initiating Market Scan ---
+2026-04-11 14:53:48,402 - INFO - Analyzed: 'Markets trade sideways as investors await inflation data.' | Sentiment: NEGATIVE | Confidence: 0.7765
+2026-04-11 14:53:48,402 - INFO - AI Confidence (0.78) below threshold. Holding position.
+2026-04-11 14:53:48,402 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 14:56:54,160 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 14:57:18,956 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 14:57:18,956 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 14:57:21,067 - INFO - FinBERT Model loaded and ready.
+2026-04-11 14:57:21,067 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 14:57:21,067 - INFO - --- Initiating Market Scan ---
+2026-04-11 14:57:21,127 - INFO - Analyzed: 'Major crypto exchange hacked, millions stolen in security breach.' | Sentiment: NEGATIVE | Confidence: 0.8826
+2026-04-11 14:57:21,127 - INFO - STRONG BEARISH SIGNAL. Executing SHORT on BTCUSDT.
+2026-04-11 14:57:21,128 - INFO - Attempting to place MARKET SELL order for 0.01 BTCUSDT
+2026-04-11 14:57:21,128 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775899641128&signature=9929387611b1f64559e6aae74e311e9899a37771f9ade9f274473d158f72bd2c
+2026-04-11 14:57:21,746 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-04-11 14:57:21,746 - ERROR - Strategy execution failed: API Error: Signature for this request is not valid.
+2026-04-11 14:57:21,746 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:00:42,430 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 15:00:54,835 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:00:54,836 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:00:56,943 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:00:56,943 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 15:00:56,943 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:00:57,007 - INFO - Analyzed: 'Markets trade sideways as investors await inflation data.' | Sentiment: NEGATIVE | Confidence: 0.7765
+2026-04-11 15:00:57,007 - INFO - STRONG BEARISH SIGNAL. Executing SHORT on BTCUSDT.
+2026-04-11 15:00:57,007 - INFO - Attempting to place MARKET SELL order for 0.01 BTCUSDT
+2026-04-11 15:00:57,007 - INFO - Sending POST request to /fapi/v1/order with raw payload: symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775899857007&signature=f64647092175dfe2a600c6cda2362bf40269544cce72180375dbc05759611d0c
+2026-04-11 15:00:57,563 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-04-11 15:00:57,563 - ERROR - Strategy execution failed: API Error: Signature for this request is not valid.
+2026-04-11 15:00:57,563 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:04:06,960 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 15:04:30,996 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:04:30,996 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:04:33,144 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:04:33,145 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 15:04:33,145 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:04:33,213 - INFO - Analyzed: 'Markets trade sideways as investors await inflation data.' | Sentiment: NEGATIVE | Confidence: 0.7765
+2026-04-11 15:04:33,214 - INFO - STRONG BEARISH SIGNAL. Executing SHORT on BTCUSDT.
+2026-04-11 15:04:33,214 - INFO - Attempting to place MARKET SELL order for 0.01 BTCUSDT
+2026-04-11 15:04:33,214 - INFO - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=SELL&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775900073214&signature=da59142efb6d0db6b28cc1aeb881bf3cfe7e6c9de1661255153a9131dc3c9477
+2026-04-11 15:04:33,838 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-04-11 15:04:33,838 - ERROR - Strategy execution failed: API Error: Signature for this request is not valid.
+2026-04-11 15:04:33,838 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:08:04,553 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 15:08:18,883 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:08:18,883 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:08:20,905 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:08:20,906 - INFO - System armed. Monitoring BTCUSDT with trade size 0.01
+2026-04-11 15:08:20,906 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:08:20,974 - INFO - Analyzed: 'Ethereum network upgrade reduces gas fees significantly, driving adoption.' | Sentiment: POSITIVE | Confidence: 0.9450
+2026-04-11 15:08:20,974 - INFO - STRONG BULLISH SIGNAL. Executing LONG on BTCUSDT.
+2026-04-11 15:08:20,974 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-04-11 15:08:20,974 - INFO - Sending POST request to https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775900300974&signature=92542bed2ed8d4baf0285820e9ff2839f1eb8e4842efcd1445fae4b488f5093f
+2026-04-11 15:08:21,679 - ERROR - HTTP Error: Signature for this request is not valid.
+2026-04-11 15:08:21,680 - ERROR - Strategy execution failed: API Error: Signature for this request is not valid.
+2026-04-11 15:08:21,680 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:11:38,861 - INFO - Manual shutdown triggered. Exiting AI Auto-Trader.
+2026-04-11 15:18:06,939 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:18:06,940 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:18:09,091 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:18:09,091 - INFO - System armed. Monitoring BTCUSDT
+2026-04-11 15:18:09,091 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:18:09,235 - INFO - Analyzed: 'Ethereum network upgrade reduces gas fees significantly, driving adoption.' | Sentiment: POSITIVE | Confidence: 0.9450
+2026-04-11 15:18:09,236 - INFO - STRONG BULLISH SIGNAL. Executing LONG on BTCUSDT.
+2026-04-11 15:18:09,236 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-04-11 15:18:09,237 - INFO - Sending POST request to https://testnet.binance.vision/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.01&recvWindow=60000&timestamp=1775900889236&signature=388d192f2be8738c06dc6c7c5707955a2bef9ab72aa169f99b5aa84a2f0607d6
+2026-04-11 15:18:09,847 - ERROR - Network Error: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:18:09,847 - ERROR - Strategy execution failed: Network Error: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:18:09,848 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:20:26,607 - INFO - Manual shutdown triggered. Exiting.
+2026-04-11 15:20:48,430 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:20:48,430 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:20:50,750 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:20:50,750 - INFO - System armed. Monitoring BTCUSDT
+2026-04-11 15:20:50,750 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:20:50,819 - INFO - Analyzed: 'Ethereum network upgrade reduces gas fees significantly, driving adoption.' | Sentiment: POSITIVE | Confidence: 0.9450
+2026-04-11 15:20:50,819 - INFO - STRONG BULLISH SIGNAL. Executing LONG on BTCUSDT.
+2026-04-11 15:20:50,819 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-04-11 15:20:50,819 - INFO - Submitting order to: https://testnet.binance.vision/fapi/v1/order
+2026-04-11 15:20:51,658 - ERROR - Connection failed: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:20:51,658 - ERROR - Strategy execution failed: Network error during order placement: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:20:51,658 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:21:42,470 - INFO - Manual shutdown triggered. Exiting.
+2026-04-11 15:23:58,342 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:23:58,343 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:24:00,419 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:24:00,420 - INFO - System armed. Monitoring BTCUSDT
+2026-04-11 15:24:00,420 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:24:00,552 - INFO - Analyzed: 'Bitcoin ETF approved by SEC, massive institutional inflows expected.' | Sentiment: POSITIVE | Confidence: 0.9305
+2026-04-11 15:24:00,552 - INFO - STRONG BULLISH SIGNAL. Executing LONG on BTCUSDT.
+2026-04-11 15:24:00,552 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-04-11 15:24:00,553 - INFO - Submitting order to: https://testnet.binance.vision/fapi/v1/order
+2026-04-11 15:24:01,323 - ERROR - Connection failed: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:24:01,323 - ERROR - Strategy execution failed: Network error during order placement: Expecting value: line 1 column 1 (char 0)
+2026-04-11 15:24:01,323 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:24:34,024 - INFO - Manual shutdown triggered. Exiting.
+2026-04-11 15:25:53,325 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:25:53,326 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:25:55,491 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:25:55,491 - INFO - System armed. Monitoring BTCUSDT
+2026-04-11 15:25:55,491 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:25:55,610 - INFO - Analyzed: 'Bitcoin ETF approved by SEC, massive institutional inflows expected.' | Sentiment: POSITIVE | Confidence: 0.9305
+2026-04-11 15:25:55,611 - INFO - STRONG BULLISH SIGNAL. Executing LONG on BTCUSDT.
+2026-04-11 15:25:55,611 - INFO - Attempting to place MARKET BUY order for 0.01 BTCUSDT
+2026-04-11 15:25:55,611 - INFO - Submitting order to Futures Testnet...
+2026-04-11 15:25:55,897 - INFO - TRADE SUCCESSFUL: 13028545557
+2026-04-11 15:25:55,897 - INFO - Sleeping for 15 minutes...
+
+2026-04-11 15:28:31,085 - INFO - Manual shutdown triggered. Exiting.
+2026-04-11 15:30:12,782 - INFO - === Starting AI Automated Trading System ===
+2026-04-11 15:30:12,782 - INFO - Initializing FinBERT Neural Network...
+2026-04-11 15:30:14,962 - INFO - FinBERT Model loaded and ready.
+2026-04-11 15:30:14,963 - INFO - System armed. Monitoring BTCUSDT
+2026-04-11 15:30:14,963 - INFO - --- Initiating Market Scan ---
+2026-04-11 15:30:15,066 - INFO - Analyzed: 'Markets trade sideways as investors await inflation data.' | Sentiment: NEGATIVE | Confidence: 0.7765
+2026-04-11 15:30:15,067 - INFO - Low confidence (0.78). Holding.
+2026-04-11 15:30:15,067 - INFO - Sleeping for 15 minutes...
+
