@@ -1,43 +1,92 @@
-# Binance Futures Testnet Trading Bot
+# 🤖 AI-ML Algorithmic Trading Bot (Binance Futures)
 
-Hi! This is my submission for the Python Developer Intern application task. I've built a lightweight CLI trading bot in Python that places Market and Limit orders on the Binance Futures Testnet (USDT-M). 
+A professional-grade, autonomous trading system that leverages **NLP (Natural Language Processing)** to trade cryptocurrency futures based on real-time market sentiment. 
 
-## How to Set It Up
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-link.streamlit.app/)
 
-To get this running locally, you'll need Python 3 installed. 
+## 🌟 Overview
+This project integrates a **FinBERT Neural Network** with the **Binance Futures API** to automate trading decisions. Unlike traditional bots that rely solely on technical indicators (RSI, MACD), this system "reads" the news to gauge market psychology and executes trades with sub-second precision.
 
-1. **Clone the repo and enter the directory:**
-   ```bash
-   git clone [https://github.com/dhruvpathak23/binance-futures-testnet-bot.git](https://github.com/dhruvpathak23/binance-futures-testnet-bot.git)
-   cd binance-futures-testnet-bot
+### 🧠 Key Features
+* **Sentiment Analysis:** Uses `ProsusAI/finbert`, a specialized BERT model trained on financial data.
+* **Autonomous Execution:** Automatically places Market Buy/Sell orders on high-confidence signals (>85%).
+* **Risk Management:** Every trade is protected by automated **Take Profit (1%)** and **Stop Loss (0.5%)** orders.
+* **Interactive Dashboard:** A live Streamlit UI providing real-time sentiment metrics and trade logs.
+* **Secure Infrastructure:** Implements HMAC-SHA256 request signing and environment-based secret management.
 
-   # Create a virtual environment and install dependencies (requests):
+---
 
-   python -m venv venv
+## 🏗️ Project Structure
+```text
+├── .streamlit/          # Streamlit Cloud configuration
+├── bot/                 # Core logic package
+│   ├── ai_engine.py     # FinBERT model initialization & inference
+│   ├── client.py        # Binance API wrapper & request signing
+│   ├── orders.py        # Order placement functions (Market, TP/SL)
+│   └── strategy.py      # Decision-making logic & risk ratios
+├── dashboard.py         # Main Streamlit UI entry point
+├── auto_trader.py       # CLI-based trading script
+├── requirements.txt     # Dependency list
+└── README.md            # Documentation
+🛠️ Technical Implementation
+1. NLP Inference
+The bot utilizes the FinBERT transformer model. It classifies market headlines into three categories: Positive, Negative, and Neutral.
 
-# On Windows: 
-'''bash
-venv\Scripts\activate
+2. Cryptographic Signing
+To interact with Binance, the bot generates a secure signature for every request using the HMAC-SHA256 algorithm. This ensures the integrity and authenticity of the trading commands.
 
-# On Mac/Linux: 
-'''bash
-source venv/bin/activate
+3. Execution Pipeline
+Scan: Pulls real-time crypto headlines.
 
+Analyze: FinBERT returns sentiment labels and confidence scores.
+
+Validate: Only triggers if confidence > 0.85.
+
+Execute: Places a Market order and immediately hedges with TP/SL trigger orders.
+
+🚀 Getting Started
+Prerequisites
+Python 3.11+
+
+Binance Testnet API Keys
+
+Installation
+Clone the repository:
+
+Bash
+git clone [https://github.com/dhruvpathak23/Binance-Futures-Testnet-Trading-Bot.git](https://github.com/dhruvpathak23/Binance-Futures-Testnet-Trading-Bot.git)
+Install dependencies:
+
+Bash
 pip install -r requirements.txt
+Set your secrets in .streamlit/secrets.toml:
+
+Ini, TOML
+BINANCE_TESTNET_API_KEY = "your_key"
+BINANCE_TESTNET_SECRET = "your_secret"
+Run the dashboard:
+
+Bash
+streamlit run dashboard.py
+💡 Technical Challenges Overcome
+Subdomain Routing: Resolved conflicts between binance.vision (Key Authentication) and binancefuture.com (Futures Endpoints).
+
+Data Sanitization: Implemented an aggressive scrubbing layer to prevent invisible characters in environment variables from corrupting HMAC signatures.
+
+Resource Optimization: Utilized @st.cache_resource to keep the 400MB AI model in RAM, preventing UI lag during live market scans.
+
+👨‍💻 Developer
+Dhruv Pathak Final Semester B.Tech (CSE - AI & ML)
+
+Disclaimer: This bot is for educational purposes and runs on the Binance Testnet. Trading involves significant risk.
 
 
+---
 
-# Place a MARKET Buy Order:
-python cli.py --symbol BTCUSDT --side BUY --type MARKET --quantity 0.01
-
-# Place a LIMIT Sell Order:
-python cli.py --symbol BTCUSDT --side SELL --type LIMIT --quantity 0.01 --price 100000
-
-# Some Notes & Assumptions
-While building and testing this, I handled a few interesting edge cases to make sure the app was robust:
-
-Binance's Testnet URL Change: Binance recently deprecated the old testnet.binancefuture.com URL mentioned in the assignment. To ensure the bot actually executes successfully on their current infrastructure, I configured the base API URL to point to their active unified Demo environment: https://demo-fapi.binance.com.
-
-Fixing Signature Rejections: I noticed that passing a Python dictionary directly into requests.post() occasionally triggered -1022 INVALID_SIGNATURE errors from Binance. This happens because the requests library can silently re-encode float values or reorder keys behind the scenes before sending the payload over the network. To make the bot bulletproof, I engineered the client to construct a raw x-www-form-urlencoded string and send that instead, ensuring the server receives the exact string used to calculate the HMAC signature.
-
-Limit Orders: I assumed all Limit orders should be "Good Till Canceled", so my code automatically attaches the timeInForce="GTC" parameter whenever a limit order is routed to the client.
+### 🚀 What's next?
+1. **Paste this** into your `README.md` file in VS Code.
+2. **Push the change** to GitHub:
+   ```bash
+   git add README.md
+   git commit -m "Update professional README with deployment info"
+   git push origin main
